@@ -1,0 +1,20 @@
+一定要注意版本问题，每个版本号都要对的上，否则不工作
+
+1.CUDA 工具包 10.2 下载
+https://developer.nvidia.com/cuda-10.2-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exelocal
+2.cuDNN下载
+https://developer.nvidia.com/rdp/cudnn-archive
+解压后将对应文件夹下的内容补充到cuda的安装目录下，有三个
+3.
+*新建一个虚拟环境，安装pytorch cuda版
+安装了pyTorch
+	过程中注意几点：
+	①用conda的命令行安装
+	②生成命令时选择None CUDA,就不支持用GPU加速计算了，包会小很多，运算速度会大大减慢，有显卡时要选择相应的cuda版本
+	③使用清华镜像，首先要改conda配置项（改源channels），之后要去掉生成命令里的强制命令 -c
+		conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+		conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+		conda config --set show_channel_urls yes
+		conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+		原文链接：https://blog.csdn.net/qq_43237588/article/details/89183303
+
