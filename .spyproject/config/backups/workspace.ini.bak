@@ -1,0 +1,10 @@
+[workspace]
+restore_data_on_startup = True
+save_data_on_exit = True
+save_history = True
+save_non_project_files = False
+
+[main]
+version = 0.2.0
+recent_files = ['mnist_pytorch_example.py', 'E:\\anaconda\\lib\\site-packages\\torch\\nn\\modules\\conv.py', 'E:\\anaconda\\lib\\site-packages\\torch\\nn\\functional.py', 'E:\\anaconda\\lib\\site-packages\\torch\\nn\\modules\\module.py', 'E:\\anaconda\\lib\\argparse.py']
+
